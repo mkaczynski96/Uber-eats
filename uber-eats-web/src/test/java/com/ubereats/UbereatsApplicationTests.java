@@ -1,4 +1,4 @@
-package com.ubereats.ubereats;
+package com.ubereats;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

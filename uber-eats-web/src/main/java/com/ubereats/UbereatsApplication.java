@@ -1,4 +1,4 @@
-package com.ubereats.ubereats;
+package com.ubereats;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

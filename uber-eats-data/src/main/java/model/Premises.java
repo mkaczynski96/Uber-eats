@@ -6,8 +6,8 @@ public class Premises {
     private String address;
     private Dish dish;
 
-    public Premises(Dish dish) {
-        this.dish = dish;
+    public Premises() {
+
     }
 
     public String getName() {

@@ -7,6 +7,9 @@ public class Dish {
     private String size;
     private String notes;
 
+    public Dish() {
+    }
+
     public String getName() {
         return name;
     }

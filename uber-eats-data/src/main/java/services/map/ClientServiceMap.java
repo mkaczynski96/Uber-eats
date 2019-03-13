@@ -1,10 +1,11 @@
 package services.map;
 
 import model.Client;
+import org.springframework.stereotype.Service;
 import services.ClientService;
 
 import java.util.Set;
-
+@Service
 public class ClientServiceMap extends AbstractMapService<Client,Long> implements ClientService {
     @Override
     public Set<Client> findAll() {

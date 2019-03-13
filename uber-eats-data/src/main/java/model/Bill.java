@@ -1,13 +1,14 @@
 package model;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 public class Bill extends BaseEntity{
 
     private Client client;
     private Premises premises;
     private LocalDate localDate;
-    private Dish dish;
+    private Set<Dish> dish;
 
     private float totalAmount;
     private boolean delivery;

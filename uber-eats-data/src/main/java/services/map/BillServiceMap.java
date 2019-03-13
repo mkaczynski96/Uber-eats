@@ -1,10 +1,12 @@
 package services.map;
 
 import model.Bill;
+import org.springframework.stereotype.Service;
 import services.BillService;
 
 import java.util.Set;
 
+@Service
 public class BillServiceMap extends AbstractMapService<Bill,Long> implements BillService {
     @Override
     public Set<Bill> findAll() {

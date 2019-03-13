@@ -1,10 +1,11 @@
 package services.map;
 
 import model.Premises;
+import org.springframework.stereotype.Service;
 import services.PremisesService;
 
 import java.util.Set;
-
+@Service
 public class PremisesServiceMap extends AbstractMapService<Premises,Long> implements PremisesService {
     @Override
     public Premises findByName(String name) {

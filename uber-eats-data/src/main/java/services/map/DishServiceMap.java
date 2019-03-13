@@ -1,10 +1,11 @@
 package services.map;
 
 import model.Dish;
+import org.springframework.stereotype.Service;
 import services.DishService;
 
 import java.util.Set;
-
+@Service
 public class DishServiceMap extends AbstractMapService<Dish,Long> implements DishService {
     @Override
     public Dish findByName(String name) {

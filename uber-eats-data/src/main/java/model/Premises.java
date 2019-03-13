@@ -27,4 +27,12 @@ public class Premises extends BaseEntity{
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public Set<Dish> getDish() {
+        return dish;
+    }
+
+    public void setDish(Set<Dish> dish) {
+        this.dish = dish;
+    }
 }

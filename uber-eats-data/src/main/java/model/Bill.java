@@ -41,6 +41,14 @@ public class Bill extends BaseEntity{
         this.localDate = localDate;
     }
 
+    public Set<Dish> getDish() {
+        return dish;
+    }
+
+    public void setDish(Set<Dish> dish) {
+        this.dish = dish;
+    }
+
     public float getTotalAmount() {
         return totalAmount;
     }
@@ -64,6 +72,4 @@ public class Bill extends BaseEntity{
     public void setDeliveryTime(int deliveryTime) {
         this.deliveryTime = deliveryTime;
     }
-
-
 }

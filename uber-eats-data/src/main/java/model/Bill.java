@@ -1,6 +1,7 @@
 package model;
 
 import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.Set;
 
 public class Bill extends BaseEntity{
@@ -8,7 +9,7 @@ public class Bill extends BaseEntity{
     private Client client;
     private Premises premises;
     private LocalDate localDate;
-    private Set<Dish> dish;
+    private Set<Dish> dish = new HashSet<>();
 
     private float totalAmount;
     private boolean delivery;

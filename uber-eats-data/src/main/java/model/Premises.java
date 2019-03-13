@@ -1,12 +1,13 @@
 package model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Premises extends BaseEntity{
 
     private String name;
     private String address;
-    private Set<Dish> dish;
+    private Set<Dish> dish  = new HashSet<>();
 
     public Premises() {
 

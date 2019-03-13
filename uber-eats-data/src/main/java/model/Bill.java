@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
-public class Bill {
+public class Bill extends BaseEntity{
 
     private Client client;
     private Premises premises;

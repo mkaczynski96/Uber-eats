@@ -1,6 +1,6 @@
 package model;
 
-public class Premises {
+public class Premises extends BaseEntity{
 
     private String name;
     private String address;

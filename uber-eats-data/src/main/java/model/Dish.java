@@ -1,6 +1,6 @@
 package model;
 
-public class Dish {
+public class Dish extends BaseEntity{
 
     private String name;
     private int price;

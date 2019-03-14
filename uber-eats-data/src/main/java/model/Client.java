@@ -4,6 +4,7 @@ public class Client extends Person {
 
     private String address;
     private int phoneNumber;
+    private int rangeDistanceToLocal;
 
     public Client() {
     }
@@ -22,5 +23,13 @@ public class Client extends Person {
 
     public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public int getRangeDistanceToLocal() {
+        return rangeDistanceToLocal;
+    }
+
+    public void setRangeDistanceToLocal(int rangeDistanceToLocal) {
+        this.rangeDistanceToLocal = rangeDistanceToLocal;
     }
 }

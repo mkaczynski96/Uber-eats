@@ -7,6 +7,7 @@ public class Premises extends BaseEntity{
 
     private String name;
     private String address;
+    private Long rangeDistance;
     private Set<Dish> dish  = new HashSet<>();
 
     public Premises() {
@@ -27,6 +28,14 @@ public class Premises extends BaseEntity{
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public Long getRangeDistance() {
+        return rangeDistance;
+    }
+
+    public void setRangeDistance(Long rangeDistance) {
+        this.rangeDistance = rangeDistance;
     }
 
     public Set<Dish> getDish() {

@@ -1,5 +1,5 @@
 <!doctype html>
-<html th:fragment="layout (template, menu)">
+<html th:fragment="layout (template, menu)" xmlns:th="http://www.springframework.org/schema/data/jaxb">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta charset="utf-8">
@@ -15,22 +15,121 @@
 
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" th:href="@{/css/Layout.css}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/UberEats/uber-eats-web/src/main/resources/static/css/Layout.css"
+          th:href="@{./css/Layout.css}"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 
 </head>
 
 <body>
+<div id="app_content" class="h-100">
+    <div id="content" class="d-flex flex-column h-100">
+        <nav class="navba flex-grow-1">
+            <div class="container">
+                <div class="row">
+                    <div class="navCol1 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-center">
+                        <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/logo.png"
+                             th:src="@{/resources/images/logo.png}"/>
+                    </div>
+                    <div class="navCol2 col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
+                        <a href="#">
+                            <i class="material-icons">apps</i>Categories
+                        </a>
+                    </div>
+                    <div class="navCol3 col-xs-12 col-sm-12  col-md-4 col-lg-4  col-xl-4">
+                        <form class="form-inline">
+                            <input class="form-control mr-lg-0" type="search" placeholder="Address"
+                                   aria-label="Address">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <div class="navCol4 col-xs-12 col-sm-12  col-md-2  col-lg-2 col-xl-2">
+                        <a class="btn btn-primary btn-sm  col-xs-12 col-sm-12" href="#" role="button">Log in</a>
+                    </div>
+                    <div class="navCol5 col-xs-12 col-sm-12  col-md-1  col-lg-1 col-xl-1 d-flex justify-content-center">
+                        <a href="#">
+                            <i class="material-icons">shopping_basket</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-<div class="container-fluid">
+        <section class="main flex-grow-1">
+            <th:block th:include="${template}"/>
+        </section>
 
-    <div class="col-12 text-center">
-        <th:block th:include="${template}"/>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/logo_footer.png"
+                             th:src="@{/resources/images/logo_footer.png}"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="row">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-lg-12">
+                                        <select id="inputState" class="form-control">
+                                            <option selected>English</option>
+                                            <option>Polski</option>
+                                            <option>Deutsch</option>
+                                            <option>Francais</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            facebook twitter instagram
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="row"><a href="#">Informations about Uber Eats</a></div>
+                        <div class="row"><a href="#">Become a partner in delivery</a></div>
+                        <div class="row"><a href="#">Become a restaurant partner</a></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="row"><a href="#">Look other cities</a></div>
+                        <div class="row"><a href="#">Tariff</a></div>
+                        <div class="row"><a href="#">Help</a></div>
+                        <div class="row"><a href="#">Frequency questions</a></div>
+                        <div class="row"><a href="#">Blog</a></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medias col-12">
+                        <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/appstore.png"
+                             class="appstore" th:src="@{/resources/images/appstore.png}"/>
+                        <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/googleplay.png"
+                             class="googleplay" th:src="@{/resources/images/googleplay.png}"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">2019 Uber Eats by Michal
+                                Kaczynski
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">Privacy policy</div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">Conditions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 
 </body>

@@ -72,6 +72,41 @@ nav,
     justify-content: center;
 }
 
+.medias a{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+
+.footer a,
+.footer a:link,
+.footer a:visited,
+.footer a:link:active,
+.footer a:visited:active{
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover{
+    color: green;
+}
+
+.footer a i{
+    padding: 10px;
+}
+
+
+
+.lastOptions{
+    display: flex;
+    justify-content: center;
+}
+
+
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .appstore, .googleplay {

@@ -21,6 +21,7 @@
           th:href="@{./css/Layout.css}"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -87,7 +88,9 @@
                             </form>
                         </div>
                         <div class="row">
-                            facebook twitter instagram
+                            <a href="#"><i class="fa fa-facebook" style="font-size:24px"></i> </a>
+                            <a href="#"> <i class="fa fa-twitter" style="font-size:24px"></i> </a>
+                                <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i> </a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -105,20 +108,25 @@
                 </div>
                 <div class="row">
                     <div class="medias col-12">
-                        <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/appstore.png"
-                             class="appstore" th:src="@{/resources/images/appstore.png}"/>
-                        <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/googleplay.png"
-                             class="googleplay" th:src="@{/resources/images/googleplay.png}"/>
-                    </div>
+                       <a href="#"><img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/appstore.png"
+                             class="appstore" th:src="@{/resources/images/appstore.png}"/></a>
+
+                        <a href="#"> <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/googleplay.png"
+                             class="googleplay" th:src="@{/resources/images/googleplay.png}"/></a>
+                        </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">2019 Uber Eats by Michal
-                                Kaczynski
+                            <div class="lastOptions col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                2019 Uber Eats by Michal Kaczynski
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">Privacy policy</div>
-                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">Conditions</div>
+                            <div class="lastOptions col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                <a href="#">Privacy policy</a>
+                            </div>
+                            <div class="lastOptions col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                <a href="#">Conditions</a>
+                            </div>
                         </div>
                     </div>
                 </div>

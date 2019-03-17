@@ -32,11 +32,12 @@
             <div class="container">
                 <div class="row">
                     <div class="navCol1 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-center">
-                        <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/logo.png"
-                             th:src="@{/resources/images/logo.png}"/>
+                        <a href="#"> <img
+                                src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/logo.png"
+                                th:src="@{/resources/images/logo.png}"/> </a>
                     </div>
                     <div class="navCol2 col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
-                        <a href="#">
+                        <a href="#" data-toggle="collapse" data-target="#categories">
                             <i class="material-icons">apps</i>Categories
                         </a>
                     </div>
@@ -58,6 +59,28 @@
                 </div>
             </div>
         </nav>
+        <div id="categories" class="collapse">
+            <div class="container">
+                <div class="row">
+                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4"><img
+                            src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"
+                            class="img-fluid"/></div>
+                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4"><img
+                            src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"/>
+                    </div>
+                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4"><img
+                            src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"/></div>
+                </div>
+                <div class="row">
+                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4"><img
+                            src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"/></div>
+                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4"><img
+                            src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"/></div>
+                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4"><img
+                            src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"/></div>
+                </div>
+            </div>
+        </div>
 
         <section class="main flex-grow-1">
             <th:block th:include="${template}"/>
@@ -90,7 +113,7 @@
                         <div class="row">
                             <a href="#"><i class="fa fa-facebook" style="font-size:24px"></i> </a>
                             <a href="#"> <i class="fa fa-twitter" style="font-size:24px"></i> </a>
-                                <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i> </a>
+                            <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i> </a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -107,13 +130,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="medias col-12">
-                       <a href="#"><img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/appstore.png"
-                             class="appstore" th:src="@{/resources/images/appstore.png}"/></a>
+                    <div class="medias">
+                        <a href="#"><img
+                                src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/appstore.png"
+                                class="appstore" th:src="@{/resources/images/appstore.png}"/></a>
 
-                        <a href="#"> <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/googleplay.png"
-                             class="googleplay" th:src="@{/resources/images/googleplay.png}"/></a>
-                        </div>
+                        <a href="#"> <img
+                                src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/googleplay.png"
+                                class="googleplay" th:src="@{/resources/images/googleplay.png}"/></a>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
@@ -138,7 +163,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+<script src="/UberEats/uber-eats-web/src/main/resources/static/js/script.js"></script>
 
 </body>
 

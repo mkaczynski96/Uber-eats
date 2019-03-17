@@ -49,6 +49,32 @@ nav,
     justify-content: center;
 }
 
+.navCol4 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.navCol5 a {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.navCol5 a:hover{
+    color:green;
+}
+
+.categoriesFrame {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+.categoriesFrame:hover {
+    background-color: green;
+}
 
 .footer {
     background-color: #292929;
@@ -58,10 +84,13 @@ nav,
 
 .footer .row {
     padding: 20px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
 }
 
 .appstore, .googleplay {
-    width: 15%;
+    width: 25%;
     height: 100%;
 }
 
@@ -72,7 +101,7 @@ nav,
     justify-content: center;
 }
 
-.medias a{
+.medias a {
     width: 50%;
     display: flex;
     align-items: center;
@@ -85,66 +114,102 @@ nav,
 .footer a:link,
 .footer a:visited,
 .footer a:link:active,
-.footer a:visited:active{
+.footer a:visited:active {
     text-decoration: none;
     color: white;
 }
 
-.footer a:hover{
+.footer a:hover {
     color: green;
 }
 
-.footer a i{
+.footer a i {
     padding: 10px;
 }
 
 
-
-.lastOptions{
+.lastOptions {
     display: flex;
     justify-content: center;
 }
 
 
-
 /* Extra small devices (portrait phones, less than 576px) */
+
 @media (max-width: 575.98px) {
+
+    .navCol3 button {
+        width: 100%;
+    }
+
     .appstore, .googleplay {
         width: 100%;
         height: 100%;
     }
+
+    .navCol2 a {
+        display: none;
+    }
+
+    .navCol5 a {
+        display: none;
+    }
+
 
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+    .navCol3 form .form-control {
+        width: 100%;
+    }
+
+    .navCol3 button {
+        width: 100%;
+    }
+
     .appstore, .googleplay {
-        width: 35%;
+        width: 100%;
         height: 100%;
     }
 
-
-    .navCol4 {
-        width: 100%;
+    .navCol2 a {
+        display: none;
     }
+
+    .navCol5 a {
+        display: none;
+    }
+
 }
 
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+    .navCol2 a {
+        font-size: 10px;
+    }
+
+    .navCol3 form .form-control {
+        width: 45%;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
+    .navCol2 a {
+        font-size: 10px;
+    }
+
+    .navCol3 form .form-control {
+        width: 45%;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-    .navCol4 {
-        display: flex;
-        justify-content: center;
-    }
 }

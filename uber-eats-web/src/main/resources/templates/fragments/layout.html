@@ -28,16 +28,20 @@
 <body>
 <div id="app_content" class="h-100">
     <div id="content" class="d-flex flex-column h-100">
-        <nav class="navba flex-grow-1">
+
+
+        <!-- Navigation -->
+        <nav class="navbar flex-grow-1">
             <div class="container">
                 <div class="row">
                     <div class="navCol1 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-center">
-                        <a href="#"> <img
-                                src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/logo.png"
-                                th:src="@{/resources/images/logo.png}"/> </a>
+                        <a href="#">
+                            <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/logo.png"
+                                 th:src="@{/resources/images/logo.png}"/>
+                        </a>
                     </div>
                     <div class="navCol2 col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
-                        <a href="#" data-toggle="collapse" data-target="#categories">
+                        <a href="#" class="categoriesLink" data-toggle="collapse" data-target="#categories">
                             <i class="material-icons">apps</i>Categories
                         </a>
                     </div>
@@ -49,44 +53,56 @@
                         </form>
                     </div>
                     <div class="navCol4 col-xs-12 col-sm-12  col-md-2  col-lg-2 col-xl-2">
-                        <a class="btn btn-primary btn-sm  col-xs-12 col-sm-12" href="#" role="button">Log in</a>
+                        <a class="btn btn-success btn-sm  col-xs-12 col-sm-12" href="#" role="button">Log in</a>
                     </div>
                     <div class="navCol5 col-xs-12 col-sm-12  col-md-1  col-lg-1 col-xl-1 d-flex justify-content-center">
-                        <a href="#">
-                            <i class="material-icons">shopping_basket</i>
-                        </a>
+                        <a href="#"> <i class="material-icons">shopping_basket</i> </a>
                     </div>
                 </div>
             </div>
         </nav>
+
+        <!-- Categories -->
         <div id="categories" class="collapse">
             <div class="container">
                 <div class="row">
-                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4"><img
-                            src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"
-                            class="img-fluid"/></div>
-                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4"><img
-                            src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"/>
+                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4">
+                        <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"
+                             th:src="@{/resources/images/pizza.jpg}" class="img-fluid"/>
                     </div>
-                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4"><img
-                            src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"/></div>
+                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4">
+                        <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"
+                             th:src="@{/resources/images/pizza.jpg}" class="img-fluid"/>
+                    </div>
+                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4">
+                        <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"
+                             th:src="@{/resources/images/pizza.jpg}" class="img-fluid"/>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4"><img
-                            src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"/></div>
-                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4"><img
-                            src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"/></div>
-                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4"><img
-                            src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"/></div>
+                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4">
+                        <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"
+                             th:src="@{/resources/images/pizza.jpg}" class="img-fluid"/>
+                    </div>
+                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4">
+                        <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"
+                             th:src="@{/resources/images/pizza.jpg}" class="img-fluid"/>
+                    </div>
+                    <div class="categoriesFrame col-md-4 col-lg-4 col-xl-4">
+                        <img src="/UberEats/uber-eats-web/src/main/resources/static/resources/images/pizza.jpg"
+                             th:src="@{/resources/images/pizza.jpg}" class="img-fluid"/>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <section class="main flex-grow-1">
+        <!-- Main -->
+        <main id="main" class="flex-grow-1">
             <th:block th:include="${template}"/>
-        </section>
+        </main>
 
-        <footer class="footer">
+        <!-- Footer -->
+        <footer id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-12">

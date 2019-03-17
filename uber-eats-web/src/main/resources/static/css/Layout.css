@@ -2,7 +2,8 @@ body, html {
     height: 100%;
 }
 
-nav,
+/* NAV */
+
 .navbar {
     margin: 0;
     padding: 20px;
@@ -10,6 +11,9 @@ nav,
 
 .navbar .container {
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .navbar .container .row {
@@ -28,7 +32,7 @@ nav,
     position: relative;
     top: 6px;
     margin-right: 2px;
-    fill: #fff;
+    fill: #ffffff;
 }
 
 .navCol2 a,
@@ -41,7 +45,7 @@ nav,
 }
 
 .navCol2 a:hover {
-    color: forestgreen;
+    color: #28a745;
 }
 
 .navCol3 form {
@@ -57,13 +61,15 @@ nav,
 }
 
 .navCol5 a {
-    color: white;
-    text-shadow: black 0.1em 0.1em 0.2em
+    color: #ffffff;
+    text-shadow: #000000 0.1em 0.1em 0.2em
 }
 
-.navCol5 a:hover{
-    color:green;
+.navCol5 a:hover {
+    color: #28a745;
 }
+
+/* CATEGORIES */
 
 .categoriesFrame {
     display: flex;
@@ -73,16 +79,18 @@ nav,
 }
 
 .categoriesFrame:hover {
-    background-color: green;
+    background-color: #28a745;
 }
 
-.footer {
-    background-color: #292929;
-    color: white;
+/* FOOTER */
+
+#footer {
+    background-color: #262626;
+    color: #ffffff;
 
 }
 
-.footer .row {
+#footer .row {
     padding: 20px;
     display: flex;
     justify-items: center;
@@ -110,20 +118,20 @@ nav,
 }
 
 
-.footer a,
-.footer a:link,
-.footer a:visited,
-.footer a:link:active,
-.footer a:visited:active {
+#footer a,
+#footer a:link,
+#footer a:visited,
+#footer a:link:active,
+#footer a:visited:active {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
-.footer a:hover {
-    color: green;
+#footer a:hover {
+    color: #28a745;
 }
 
-.footer a i {
+#footer a i {
     padding: 10px;
 }
 
@@ -133,6 +141,8 @@ nav,
     justify-content: center;
 }
 
+
+/* MEDIA QUERIES */
 
 /* Extra small devices (portrait phones, less than 576px) */
 

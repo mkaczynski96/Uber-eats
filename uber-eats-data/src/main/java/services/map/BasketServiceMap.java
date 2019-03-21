@@ -1,9 +1,11 @@
 package services.map;
 
 import model.Basket;
+import org.springframework.stereotype.Service;
 import services.BasketService;
 import java.util.Set;
 
+@Service
 public class BasketServiceMap extends AbstractMapService<Basket, Long> implements BasketService {
     @Override
     public Set<Basket> findAll() {

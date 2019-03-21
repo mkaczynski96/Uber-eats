@@ -1,10 +1,12 @@
 package services.map;
 
 import model.Category;
+import org.springframework.stereotype.Service;
 import services.CategoryService;
 
 import java.util.Set;
 
+@Service
 public class CategoryServiceMap extends AbstractMapService<Category, Long> implements CategoryService {
     @Override
     public Category findByName(String name) {

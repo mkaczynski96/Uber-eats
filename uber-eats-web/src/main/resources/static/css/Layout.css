@@ -78,6 +78,10 @@ body, html {
     padding: 10px;
 }
 
+.categoriesFrame img{
+    width: 100%;
+    height: 100%;
+}
 .categoriesFrame:hover {
     background-color: #28a745;
 }

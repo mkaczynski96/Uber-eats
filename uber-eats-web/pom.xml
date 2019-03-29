@@ -11,7 +11,18 @@
 
     <artifactId>uber-eats-web</artifactId>
 
+
     <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.1.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <artifactId>uber-eats-data</artifactId>
+            <groupId>com.ubereats</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -38,4 +49,9 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <properties>
+        <!-- The main class to start by executing java -jar -->
+        <start-class>com.ubereats.UbereatsApplication.java</start-class>
+    </properties>
 </project>

@@ -6,7 +6,6 @@
     <modules>
         <module>uber-eats-data</module>
         <module>uber-eats-web</module>
-        <module>uber-eats-data</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

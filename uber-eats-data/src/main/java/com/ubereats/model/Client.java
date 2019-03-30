@@ -13,7 +13,7 @@ public class Client extends Person {
     private String phoneNumber;
 
     @Column(name = "rangeDistanceToLocal")
-    private int rangeDistanceToLocal;
+    private Long rangeDistanceToLocal;
 
 
     public Client() {
@@ -35,11 +35,11 @@ public class Client extends Person {
         this.phoneNumber = phoneNumber;
     }
 
-    public int getRangeDistanceToLocal() {
+    public Long getRangeDistanceToLocal() {
         return rangeDistanceToLocal;
     }
 
-    public void setRangeDistanceToLocal(int rangeDistanceToLocal) {
+    public void setRangeDistanceToLocal(Long rangeDistanceToLocal) {
         this.rangeDistanceToLocal = rangeDistanceToLocal;
     }
 }

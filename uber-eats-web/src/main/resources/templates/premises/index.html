@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'premises')}">
+<head>
+    <meta charset="UTF-8">
+    <title>Premises</title>
+</head>
+<body>
+<h1 th:text="'Premises'">Premises page</h1>
+<table  class="table table-striped">
+    <thead>
+    <tr>
+        <th style="width: 150px;">Id</th>
+        <th style="width: 200px;">Name</th>
+        <th style="width: 120px">Address</th>
+        <th style="width: 120px">Range distance</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="premisesTH : ${premises}">
+        <td th:text="${premisesTH.id}">1</td>
+        <td th:text="${premisesTH.name}">Joe</td>
+        <td th:text="${premisesTH.address}">Buck</td>
+        <td th:text="${premisesTH.rangeDistance}">Buck</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

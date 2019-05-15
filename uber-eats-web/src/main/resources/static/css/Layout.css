@@ -7,6 +7,7 @@ body, html {
 .navbar {
     margin: 0;
     padding: 1%;
+    top: 0;
 }
 
 .navbar .container {
@@ -71,7 +72,11 @@ body, html {
 
 /* CATEGORIES */
 
-.categories .row{
+#categories{
+    padding: 1%;
+}
+
+#categories .row{
     padding: 0;
 }
 

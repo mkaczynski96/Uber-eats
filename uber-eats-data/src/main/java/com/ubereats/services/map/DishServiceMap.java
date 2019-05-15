@@ -3,11 +3,13 @@ package com.ubereats.services.map;
 import com.ubereats.model.Dish;
 import com.ubereats.services.CategoryService;
 import com.ubereats.services.PremisesService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import com.ubereats.services.DishService;
 
 import java.util.Set;
 @Service
+@Profile({"default", "map"})
 public class DishServiceMap extends AbstractMapService<Dish,Long> implements DishService {
 
     private final PremisesService premisesService;

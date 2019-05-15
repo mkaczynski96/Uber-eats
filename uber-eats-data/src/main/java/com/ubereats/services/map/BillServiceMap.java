@@ -4,12 +4,14 @@ import com.ubereats.model.Bill;
 import com.ubereats.repositories.DishRepository;
 import com.ubereats.services.ClientService;
 import com.ubereats.services.PremisesService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import com.ubereats.services.BillService;
 
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class BillServiceMap extends AbstractMapService<Bill,Long> implements BillService {
 
     private final ClientService clientService;

@@ -1,11 +1,13 @@
 package com.ubereats.services.map;
 
 import com.ubereats.model.Premises;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import com.ubereats.services.PremisesService;
 
 import java.util.Set;
 @Service
+@Profile({"default", "map"})
 public class PremisesServiceMap extends AbstractMapService<Premises,Long> implements PremisesService {
     @Override
     public Premises findByName(String name) {

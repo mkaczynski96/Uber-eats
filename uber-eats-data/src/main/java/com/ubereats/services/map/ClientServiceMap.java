@@ -1,11 +1,13 @@
 package com.ubereats.services.map;
 
 import com.ubereats.model.Client;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import com.ubereats.services.ClientService;
 
 import java.util.Set;
 @Service
+@Profile({"default", "map"})
 public class ClientServiceMap extends AbstractMapService<Client,Long> implements ClientService {
 
     @Override
